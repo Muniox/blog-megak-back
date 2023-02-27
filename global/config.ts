@@ -50,6 +50,7 @@ const getConfig = (): ENV => ({
 // definition.
 
 const getSanitizedConfig = (config: ENV): Config => {
+  // eslint-disable-next-line no-restricted-syntax
   for (const [key, value] of Object.entries(config)) {
     if (key === 'NODE_ENV') {
       if (!(value === 'production' || value === 'development')) throw new Error('NODE_ENV should be development or production');
