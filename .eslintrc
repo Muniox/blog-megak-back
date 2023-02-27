@@ -19,6 +19,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "import/extensions": [2, {"ts": "always"}],
+        "import/no-unresolved": [2, {"ignore": ["/globals$"] }]
     }
 }
