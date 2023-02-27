@@ -1,0 +1,13 @@
+The .env file should be in the root directory and contain the following variables:
+
+//NODE
+NODE_ENV: 'development' | 'production';
+PORT: string;
+ADDRESS: string;
+
+//DATABASE
+DBHOST: string;
+DBPORT: string;
+DBNAME: string;
+DBPASSWORD: string;
+DBUSER: string;
