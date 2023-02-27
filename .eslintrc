@@ -25,7 +25,7 @@
         "import/prefer-default-export": [0],
 
         "import/order": [
-            0,
+            2,
             {
                 "groups": [
                     "builtin",
@@ -38,7 +38,7 @@
                 ],
                 "pathGroups": [
                     {
-                        "pattern": "^\\.",
+                        "pattern": ".*/global/config",
                         "group": "builtin"
                     }
                 ]
