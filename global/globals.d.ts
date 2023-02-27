@@ -3,7 +3,7 @@
 namespace NodeJS {
     interface ProcessEnv {
         // NODE
-        NODE_ENV: 'production' | 'development';
+        NODE_ENV: string;
         PORT: string;
         ADDRESS: string;
         // DATABASE

@@ -9,7 +9,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 // as someone could skip these varibales or not setup a .env file at all
 
 interface ENV {
-    NODE_ENV: 'production' | 'development';
+    NODE_ENV: string;
     PORT: number | undefined;
     ADDRESS: string | undefined;
     DBHOST: string | undefined;
@@ -20,7 +20,7 @@ interface ENV {
 }
 
 interface Config {
-    NODE_ENV: 'production' | 'development';
+    NODE_ENV: string;
     PORT: number;
     ADDRESS: string;
     DBHOST: string;
