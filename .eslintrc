@@ -21,6 +21,29 @@
     "rules": {
         "linebreak-style": ["error", "windows"],
         "import/extensions": [2, {"ts": "always"}],
-        "import/no-unresolved": [2, {"ignore": ["/globals$"] }]
+        "import/no-unresolved": [0],
+        "import/prefer-default-export": [0],
+
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "index",
+                    "object",
+                    "type",
+                    ["parent", "sibling"]
+                ],
+                "pathGroups": [
+                    {
+                        "pattern": "./global/config*",
+                        "group": "builtin",
+                        "position": "before"
+                    }
+                ]
+            }
+        ]
     }
 }
