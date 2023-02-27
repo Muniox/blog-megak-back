@@ -37,7 +37,7 @@ const getConfig = (): ENV => ({
   PORT: process.env.PORT ? Number(process.env.PORT) : undefined,
   ADDRESS: process.env.ADDRESS,
   DBHOST: process.env.DBHOST,
-  DBPORT: process.env.DBPORT ? Number(process.env.PORT) : undefined,
+  DBPORT: process.env.DBPORT ? Number(process.env.DBPORT) : undefined,
   DBNAME: process.env.DBNAME,
   DBPASSWORD: process.env.DBPASSWORD,
   DBUSER: process.env.DBUSER,
