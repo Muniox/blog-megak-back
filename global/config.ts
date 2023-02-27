@@ -33,7 +33,6 @@ interface Config {
 // Loading process.env as ENV interface
 
 const getConfig = (): ENV => ({
-  // @ts-ignore
   NODE_ENV: process.env.NODE_ENV,
   PORT: process.env.PORT ? Number(process.env.PORT) : undefined,
   ADDRESS: process.env.ADDRESS,
