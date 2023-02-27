@@ -3,11 +3,14 @@ import express from 'express';
 import 'express-async-errors';
 import { handleError } from './utils/errors';
 import { showServerMode } from './utils/showServerMode';
+import { pool } from './utils/database';
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('hello :)');
+app.get('/', async (req, res) => {
+  const [result] = await pool.execute('SELECT * FROM `users`');
+  console.log(result);
+  res.send('działa');
 });
 
 app.use(handleError);

@@ -1,8 +1,8 @@
-import { createPool } from 'mysql2/promise';
 import config from '../global/config';
+import { createPool } from 'mysql2/promise';
 
 export const pool = createPool({
-  host: config.ADDRESS,
+  host: config.DBHOST,
   user: config.DBUSER,
   port: config.DBPORT,
   password: config.DBPASSWORD,
