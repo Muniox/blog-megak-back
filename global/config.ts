@@ -13,7 +13,7 @@ interface ENV {
     PORT: number | undefined;
     ADDRESS: string | undefined;
     DBHOST: string | undefined;
-    DBPORT: string | undefined;
+    DBPORT: number | undefined;
     DBNAME: string | undefined;
     DBPASSWORD: string | undefined;
     DBUSER: string | undefined;
@@ -24,7 +24,7 @@ interface Config {
     PORT: number;
     ADDRESS: string;
     DBHOST: string;
-    DBPORT: string;
+    DBPORT: number;
     DBNAME: string;
     DBPASSWORD: string;
     DBUSER: string;
@@ -38,7 +38,7 @@ const getConfig = (): ENV => ({
   PORT: process.env.PORT ? Number(process.env.PORT) : undefined,
   ADDRESS: process.env.ADDRESS,
   DBHOST: process.env.DBHOST,
-  DBPORT: process.env.DBPORT,
+  DBPORT: process.env.DBPORT ? Number(process.env.PORT) : undefined,
   DBNAME: process.env.DBNAME,
   DBPASSWORD: process.env.DBPASSWORD,
   DBUSER: process.env.DBUSER,
