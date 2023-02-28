@@ -1,15 +1,35 @@
 import config from './global/config';
 import express from 'express';
 import 'express-async-errors';
+import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import cookieParser from 'cookie-parser';
+import multer from 'multer';
 import { handleError } from './utils/errors';
-import { showServerMode } from './utils/showServerMode';
-import { pool } from './utils/database';
+import { showServerMode } from './utils/show_server_mode';
+import { storage } from './utils/storage';
+import './utils/database';
 
 const app = express();
 
-app.get('/', async (req, res) => {
-  const [result] = await pool.execute('SELECT * FROM `users`');
-  console.log(result);
+app.use(cors({
+  origin: 'http://localhost:5173',
+}));
+app.use(express.json());
+app.use(cookieParser());
+app.use(rateLimit({
+  windowMs: 5 * 60 * 1000, // 5 minutes
+  max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+}));
+
+const upload = multer({ storage });
+
+app.post('/api/upload', upload.single('file'), (req, res) => {
+  const { file } = req;
+  res.status(200).json(file.filename);
+});
+
+app.get('/api', async (req, res) => {
   res.send('działa');
 });
 
