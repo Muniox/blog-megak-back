@@ -1,0 +1,1 @@
+export const postsEntity = 'postsEntity';
