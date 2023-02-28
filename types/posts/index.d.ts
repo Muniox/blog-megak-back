@@ -1,2 +1,2 @@
 export * from './posts';
-export * from './postsEntity';
+export * from './posts_entity';
