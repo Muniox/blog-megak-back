@@ -8,6 +8,8 @@ import multer from 'multer';
 import { handleError } from './utils/errors';
 import { showServerMode } from './utils/show_server_mode';
 import { storage } from './utils/storage';
+import { usersRouter } from './routes/users';
+import { postsRouter } from './routes/posts';
 import './utils/database';
 
 const app = express();
@@ -29,9 +31,8 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
   res.status(200).json(file.filename);
 });
 
-app.get('/api', async (req, res) => {
-  res.send('działa');
-});
+app.use('/users', usersRouter);
+app.use('/posts', postsRouter);
 
 app.use(handleError);
 
