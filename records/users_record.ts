@@ -9,7 +9,7 @@ type UsersRecordResults = [
     FieldPacket[],
 ]
 
-export class Users_record implements UsersEntity {
+export class UsersRecord implements UsersEntity {
   id: string;
 
   email: string;
@@ -21,11 +21,21 @@ export class Users_record implements UsersEntity {
   img: string;
 
   constructor(obj: NewUsersEntity) {
+    // @TODO make validation in this place (example add id where is no id provided)
+
     this.id = obj.id;
     this.email = obj.email;
     this.name = obj.name;
     this.password = obj.password;
     this.img = obj.img;
+  }
+
+  async insert() {
+    if (!this.id) {
+      this.id = uuid();
+    } else {
+
+    }
   }
 
   static async getUser() {

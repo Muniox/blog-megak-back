@@ -26,6 +26,8 @@ export class PostsRecord implements PostsEntity {
 
   constructor(obj: NewPostsEntity) {
     // @TODO make validation in this place (example add id where is no id provided)
+    if (!obj.title || obj.title.length < 3 || obj.title.length > 50) throw new ValidationExpressError('Tytuł powinien od 3 do 50 znaków');
+
     this.id = obj.id;
     this.title = obj.title;
     this.desc = obj.desc;
