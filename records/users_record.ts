@@ -9,7 +9,7 @@ type UsersRecordResults = [
     FieldPacket[],
 ]
 
-export class UsersRecord implements UsersEntity {
+export class Users_record implements UsersEntity {
   id: string;
 
   email: string;
