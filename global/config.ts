@@ -53,7 +53,8 @@ const getSanitizedConfig = (config: ENV): Config => {
   // eslint-disable-next-line no-restricted-syntax
   for (const [key, value] of Object.entries(config)) {
     if (key === 'NODE_ENV') {
-      if (!(value === 'production' || value === 'development')) throw new Error('NODE_ENV should be development or production');
+      if (value === 'test') console.log('NODE is working in test Jest mode');
+      if (!(value === 'production' || value === 'development' || value === 'test')) throw new Error('NODE_ENV should be test (only for Jest), development or production');
     }
     if (value === undefined) {
       throw new Error(`Missing key ${key} in config.env`);
