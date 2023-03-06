@@ -3,5 +3,5 @@ export interface UsersEntity {
     name: string;
     email: string;
     password: string;
-    img: string;
+    img?: string;
 }
