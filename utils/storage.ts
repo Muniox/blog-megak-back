@@ -1,6 +1,6 @@
 import { diskStorage } from 'multer';
 
-// @TODO Change upload directory for production
+// @TODO Zmienić ścieżkę dla folderu upload, żeby była jedna produkcyjna i druga developerska
 export const storage = diskStorage({
   destination: (req, file, cb) => {
     cb(null, '../blog-megak-front/public/upload');

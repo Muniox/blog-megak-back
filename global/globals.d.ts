@@ -12,5 +12,7 @@ namespace NodeJS {
         DBNAME: string;
         DBPASSWORD: string;
         DBUSER: string;
+        // JWT
+        SECRET: string
     }
 }
