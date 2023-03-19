@@ -9,7 +9,7 @@ const defaultObj: NewUsersEntity = {
   password: 'Go111111!1',
 };
 
-describe('Can build UsersRecord', () => {
+describe('Can build UsersRecord with validation', () => {
   const user = new UsersRecord(defaultObj);
 
   /* id */
