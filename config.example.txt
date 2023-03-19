@@ -11,3 +11,8 @@ DBPORT: string;
 DBNAME: string;
 DBPASSWORD: string;
 DBUSER: string;
+
+{
+    "name": "admin",
+    "password": "Admin@11"
+}

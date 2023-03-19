@@ -17,6 +17,7 @@ interface ENV {
     DBNAME: string | undefined;
     DBPASSWORD: string | undefined;
     DBUSER: string | undefined;
+    SECRET: string | undefined;
 }
 
 interface Config {
@@ -28,6 +29,7 @@ interface Config {
     DBNAME: string;
     DBPASSWORD: string;
     DBUSER: string;
+    SECRET: string;
 }
 
 // Loading process.env as ENV interface
@@ -41,6 +43,7 @@ const getConfig = (): ENV => ({
   DBNAME: process.env.DBNAME,
   DBPASSWORD: process.env.DBPASSWORD,
   DBUSER: process.env.DBUSER,
+  SECRET: process.env.SECRET,
 });
 
 // Throwing an Error if any field was undefined we don't
@@ -57,7 +60,7 @@ const getSanitizedConfig = (config: ENV): Config => {
       if (!(value === 'production' || value === 'development' || value === 'test')) throw new Error('NODE_ENV should be test (only for Jest), development or production');
     }
     if (value === undefined) {
-      throw new Error(`Missing key ${key} in config.env`);
+      throw new Error(`Missing key ${key} in .env file`);
     }
   }
   return config as Config;
