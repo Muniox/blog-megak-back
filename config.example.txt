@@ -16,3 +16,8 @@ DBUSER: string;
     "name": "admin",
     "password": "Admin@11"
 }
+
+{
+    "name": "Testowy",
+    "password": "Testowy@1"
+}

@@ -5,3 +5,8 @@ export interface NewUsersEntity extends Omit<UsersEntity, 'id'>{
 }
 
 export interface SimpleEntity extends Omit<UsersEntity, 'password'>{}
+
+export interface SimpleEntityResponse {
+    userInfo: SimpleEntity,
+    message: string,
+}

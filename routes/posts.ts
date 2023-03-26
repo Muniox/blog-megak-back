@@ -5,7 +5,7 @@ import { AuthorizeRequest, authorizeUser } from '../utils/authorize';
 export const postsRouter = Router()
 
   .get('/', async (req, res) => {
-    const data = await PostsRecord.findAll(String(req.query.cat));
+    const data = await PostsRecord.findAll(req.query.cat as string);
     return res
       .status(200)
       .json(data);
