@@ -6,4 +6,5 @@ export interface PostsEntity {
     date: string;
     userId: string;
     category: string;
+    author?: string;
 }

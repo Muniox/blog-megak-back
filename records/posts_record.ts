@@ -2,11 +2,16 @@ import { FieldPacket, OkPacket } from 'mysql2';
 import { v4 as uuid } from 'uuid';
 import { ValidationExpressError } from '../utils/errors';
 import { pool } from '../utils/database';
-import { NewPostsEntity, PostsEntity } from '../types';
+import { NewPostsEntity, PostEntityResponse, PostsEntity } from '../types';
 
 type PostsRecordResults = [
     PostsEntity[],
     FieldPacket[],
+]
+
+type PostsRecordResultsProtected = [
+  PostEntityResponse[],
+  FieldPacket[],
 ]
 
 export class PostsRecord implements PostsEntity {
@@ -24,6 +29,8 @@ export class PostsRecord implements PostsEntity {
 
   userId: string;
 
+  author?: string;
+
   constructor(obj: NewPostsEntity) {
     const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
     const dateRegex = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
@@ -34,7 +41,7 @@ export class PostsRecord implements PostsEntity {
     if (!obj.title || obj.title.length > 255 || typeof obj.title !== 'string') {
       throw new ValidationExpressError('Tytuł nie może być pusty oraz powinien zawierać maksymalnie do 255 znaków');
     }
-    if (!obj.desc || obj.desc.length > 255 || typeof obj.desc !== 'string') {
+    if (!obj.desc || typeof obj.desc !== 'string') {
       throw new ValidationExpressError('Opis nie może być pusty oraz powinien zawierać maksymalnie do 255 znaków');
     }
     if (!obj.date || !dateRegex.test(obj.date)) {
@@ -52,8 +59,9 @@ export class PostsRecord implements PostsEntity {
     this.desc = obj.desc;
     this.category = obj.category;
     this.date = obj.date;
-    this.img = obj.img ? obj.img : 'default_image.jpg'; // Maybe should use String(obj.img)
+    this.img = obj.img ? obj.img : 'default.png'; // Maybe should use String(obj.img)
     this.userId = obj.userId;
+    this.author = obj.author;
   }
 
   // @TODO posprawdzać zwracane typy przez metody!
@@ -84,13 +92,18 @@ export class PostsRecord implements PostsEntity {
 
   static async findAll(category?: string) {
     if (category) {
-      const [results] = await pool.execute('SELECT *, DATE_FORMAT(`date`, "%Y-%m-%d %H:%i:%s") as date  FROM `posts` WHERE `category` = :category', {
-        category,
-      }) as PostsRecordResults;
-      return results.map((result) => new PostsRecord(result));
+      const [results] = await pool.execute(
+        'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id` WHERE `category` = :category',
+        {
+          category,
+        },
+      ) as PostsRecordResultsProtected;
+      return results;
     }
-    const [results] = await pool.execute('SELECT *, DATE_FORMAT(`date`, "%Y-%m-%d %H:%i:%s") as date FROM `posts`') as PostsRecordResults;
-    return results.map((result) => new PostsRecord(result));
+    const [results] = await pool.execute(
+      'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id`',
+    ) as PostsRecordResultsProtected;
+    return results;
   }
 
   async delete(userId: string) {

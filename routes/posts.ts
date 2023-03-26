@@ -12,7 +12,7 @@ export const postsRouter = Router()
   })
 
   .get('/:id', async (req, res) => {
-    const data = await PostsRecord.getOne(req.params.id);
+    const { userId, ...data } = await PostsRecord.getOne(req.params.id);
     return res
       .status(200)
       .json(data);
