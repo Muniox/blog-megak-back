@@ -12,10 +12,16 @@ export const postsRouter = Router()
   })
 
   .get('/:id', async (req, res) => {
-    const { userId, ...data } = await PostsRecord.getOne(req.params.id);
+    const post = await PostsRecord.getOne(req.params.id);
+    if (post) {
+      const { userId, ...data } = await PostsRecord.getOne(req.params.id);
+      return res
+        .status(200)
+        .json(data);
+    }
     return res
       .status(200)
-      .json(data);
+      .json(post);
   })
 
   .post('/', authorizeUser, async (req: AuthorizeRequest, res) => {
