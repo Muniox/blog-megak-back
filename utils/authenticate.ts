@@ -27,11 +27,11 @@ export const authenticate = async (
     name: req.body.name,
   }) as UsersRecordResults;
 
-  if (results.length === 0) throw new ValidationExpressError('User not found!', 404);
+  if (results.length === 0) throw new ValidationExpressError('Nie znaleziono Użytkownika!', 404);
 
   // Check Password
   const isPasswordCorrect = await bcrypt.compare(req.body.password, results[0].password);
-  if (!isPasswordCorrect) throw new ValidationExpressError('Wrong name or password!', 400);
+  if (!isPasswordCorrect) throw new ValidationExpressError('Hasło jest niepoprawne!', 400);
 
   function signAsync(
     payload: string | Buffer | object,

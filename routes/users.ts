@@ -32,14 +32,14 @@ export const usersRouter = Router()
     await user.insert();
     return res
       .status(200)
-      .json({ message: 'User has been created.' });
+      .json({ message: 'Użytkownik został stworzony.' });
   })
 
   .post('/login', authenticate, async (req: AuthenticatedRequest, res) => res
     .status(200)
     .json({
       userInfo: req.data,
-      message: 'User has ben logged in.',
+      message: 'Użytkownik został zalogowany.',
     }))
 
   .post('/logout', (req, res) => res
@@ -49,7 +49,7 @@ export const usersRouter = Router()
     })
     .status(200)
     .json({
-      message: 'User has been logged out.',
+      message: 'Użytkownik został wylogowany.',
     }))
 
   .delete('/:id', authorizeAdmin, async (req, res) => {
@@ -58,7 +58,7 @@ export const usersRouter = Router()
     return res
       .status(201)
       .json({
-        message: 'User has been deleted',
+        message: 'Użytkownik został usunięty',
       });
   })
 
@@ -81,7 +81,7 @@ export const usersRouter = Router()
     return res
       .status(201)
       .json({
-        message: 'User has been updated',
+        message: 'Użytkownik został zaktualizowany',
       });
   })
 
@@ -104,6 +104,6 @@ export const usersRouter = Router()
     return res
       .status(201)
       .json({
-        message: 'User has been updated',
+        message: 'Użytkownik został zaktualizowany',
       });
   });

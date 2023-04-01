@@ -59,13 +59,13 @@ export class UsersRecord implements UsersEntity {
     }) as UsersRecordResults;
     if (results.length) {
       if (this.id === results[0].id) {
-        throw new ValidationExpressError(`User with id: ${this.id} already exist.`, 409);
+        throw new ValidationExpressError(`Użytkownik z tym ID: ${this.id} już istnieje.`, 409);
       }
       if (this.name === results[0].name) {
-        throw new ValidationExpressError(`User with name: ${this.name} already exist.`, 409);
+        throw new ValidationExpressError(`Użytkownik o pseudonimie: ${this.name} już istnieje.`, 409);
       }
       if (this.email === results[0].email) {
-        throw new ValidationExpressError(`User with email: ${this.email} already exist.`, 409);
+        throw new ValidationExpressError(`Użytkownik z tym mailem: ${this.email} już istnieje.`, 409);
       }
     }
     // Password between 8-16 characters 1 special, 1 uppercase, 1 number
@@ -117,13 +117,13 @@ export class UsersRecord implements UsersEntity {
     }) as OkPacket[];
 
     if (results.affectedRows === 0) {
-      throw new ValidationExpressError('The user has not been deleted.', 403);
+      throw new ValidationExpressError('Użytkownik został usunięty.', 403);
     }
   }
 
   async update() {
     if (!this.id) {
-      throw new ValidationExpressError('User can not be update without ID!', 403);
+      throw new ValidationExpressError('Użytkownik nie może być zaktualizowany bez podania ID!', 403);
     }
 
     const [results] = await pool.execute('SELECT * FROM `users` WHERE ( `email` = :email OR `name` = :name ) AND `id` != :id', {
@@ -134,10 +134,10 @@ export class UsersRecord implements UsersEntity {
 
     if (results.length) {
       if (this.name === results[0].name) {
-        throw new ValidationExpressError(`User with name: ${this.name} already exist.`, 409);
+        throw new ValidationExpressError(`Użytkownik o pseudonimie: ${this.name} już istnieje.`, 409);
       }
       if (this.email === results[0].email) {
-        throw new ValidationExpressError(`User with email: ${this.email} already exist.`, 409);
+        throw new ValidationExpressError(`Użytkownik z tym mailem: ${this.email} już istnieje.`, 409);
       }
     }
 
