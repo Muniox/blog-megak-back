@@ -93,7 +93,7 @@ export class PostsRecord implements PostsEntity {
   static async findAll(category?: string) {
     if (category) {
       const [results] = await pool.execute(
-        'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id` WHERE `category` = :category',
+        'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id` WHERE `category` = :category ORDER BY date desc',
         {
           category,
         },
@@ -101,7 +101,7 @@ export class PostsRecord implements PostsEntity {
       return results;
     }
     const [results] = await pool.execute(
-      'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id`',
+      'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id` ORDER BY date desc',
     ) as PostsRecordResultsProtected;
     return results;
   }

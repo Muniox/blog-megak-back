@@ -11,14 +11,13 @@ import { storage } from './utils/storage';
 import { usersRouter } from './routes/users';
 import { postsRouter } from './routes/posts';
 import './utils/database';
+import { authorizeUser } from './utils/authorize';
 
 const app = express();
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://192.168.88.251:5173',
-  ],
+  credentials: true,
+  origin: ['http://localhost:5173', 'http://192.168.88.251:5173'],
 }));
 app.use(express.json());
 app.use(cookieParser());
@@ -29,8 +28,9 @@ app.use(rateLimit({
 
 const upload = multer({ storage });
 
-app.post('/api/upload', upload.single('file'), (req, res) => {
+app.post('/api/upload', authorizeUser, upload.single('file'), (req, res) => {
   const { file } = req;
+  console.log(file);
   res.status(200).json(file.filename);
 });
 

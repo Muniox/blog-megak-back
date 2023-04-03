@@ -48,7 +48,9 @@ export const authenticate = async (
   }, config.SECRET, { expiresIn: '24h' });
 
   const { password, ...data } = results[0];
-  res.cookie('access_token', token, { httpOnly: true });
+  res.cookie('access_token', token, {
+    httpOnly: true, maxAge: 24 * 60 * 60 * 1000,
+  });
   req.data = data;
   next();
 };
