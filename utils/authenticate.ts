@@ -49,7 +49,7 @@ export const authenticate = async (
 
   const { password, ...data } = results[0];
   res.cookie('access_token', token, {
-    httpOnly: true, maxAge: 24 * 60 * 60 * 1000,
+    httpOnly: true,
   });
   req.data = data;
   next();
