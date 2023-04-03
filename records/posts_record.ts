@@ -84,7 +84,7 @@ export class PostsRecord implements PostsEntity {
   }
 
   static async getOne(id: string): Promise<PostsRecord | null> {
-    const [results] = await pool.execute('SELECT *, DATE_FORMAT(`date`, "%Y-%m-%d %H:%i:%s") as date FROM `posts` WHERE `id` = :id', {
+    const [results] = await pool.execute('SELECT s.*, DATE_FORMAT(s.`date`, "%Y-%m-%d %H:%i:%s") as date, u.`name` as author FROM `posts` s LEFT JOIN `users` u ON s.`userId` = u.`id` WHERE s.`id` = :id', {
       id,
     }) as PostsRecordResults;
     return results.length === 0 ? null : new PostsRecord(results[0]);
@@ -93,7 +93,7 @@ export class PostsRecord implements PostsEntity {
   static async findAll(category?: string) {
     if (category) {
       const [results] = await pool.execute(
-        'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") AS date, s.`category`, u.name AS author FROM posts s LEFT JOIN users u ON s.userId = u.`id` WHERE `category` = :category ORDER BY date desc',
+        'SELECT s.`id`, s.`title`, s.`desc`, s.`img`, DATE_FORMAT(s.date, "%Y-%m-%d %H:%i:%s") as date, s.`category`, u.name as author FROM `posts` s LEFT JOIN users u ON s.`userId` = u.`id` WHERE `category` = :category ORDER BY date desc',
         {
           category,
         },
