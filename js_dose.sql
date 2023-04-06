@@ -12,18 +12,13 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Zrzut struktury bazy danych js_dose
-CREATE DATABASE IF NOT EXISTS `js_dose` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
-USE `js_dose`;
-
 -- Zrzut struktury tabela js_dose.posts
 CREATE TABLE IF NOT EXISTS `posts` (
-  `id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT uuid(),
+  `id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `date` datetime NOT NULL DEFAULT curdate(),
+  `date` datetime NOT NULL,
   `userId` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `category` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -35,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
 
 -- Zrzut struktury tabela js_dose.users
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT uuid(),
+  `id` varchar(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,

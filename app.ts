@@ -19,6 +19,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://192.168.88.251:5173',
+    'http://blog.truemuniox.usermd.net/',
   ],
   credentials: true,
 }));
@@ -41,6 +42,10 @@ app.use('/posts', postsRouter);
 
 app.use(handleError);
 
-app.listen(config.PORT, config.ADDRESS, () => {
-  showServerMode(config.NODE_ENV, config.PORT, config.ADDRESS);
-});
+if (config.NODE_ENV === 'production') {
+  app.listen(() => console.log('serwer wystartował'));
+} else {
+  app.listen(config.PORT, config.ADDRESS, () => {
+    showServerMode(config.NODE_ENV, config.PORT, config.ADDRESS);
+  });
+}

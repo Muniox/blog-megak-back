@@ -7,13 +7,14 @@
         "downlevelIteration": true,
         "module" :"CommonJS",
         "lib": ["ES6"],
-        "outDir": "dist",
+        "outDir": "./public_nodejs",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "moduleResolution": "Node",
         "esModuleInterop": true,
         "typeRoots": [
             "./global/globals.d.ts", "./node_modules/@types"
-        ]
+        ],
+        "skipLibCheck": true
     }
 }

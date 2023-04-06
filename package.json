@@ -2,10 +2,10 @@
   "name": "blog-megak-back",
   "version": "0.1.0",
   "description": "",
-  "main": "index.ts",
+  "main": "app.ts",
   "scripts": {
-    "start-dev": "tsnd index.ts",
-    "start": "ts-node index.ts",
+    "start-dev": "tsnd app.ts",
+    "start": "node ./public_nodejs/index.js",
     "test": "jest",
     "build": "tsc"
   },
