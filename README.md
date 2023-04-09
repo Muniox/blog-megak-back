@@ -9,7 +9,7 @@
 - [What has been accomplished on the front-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-front-end)
 - [What has not been accomplished on the front-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-front-end)
 - [How to run client](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-run-client)
-- [Link to back-end](https://github.com/Muniox/blog-megak-back)
+- [Link to front-end](https://github.com/Muniox/blog-megak-front)
 
 ## General info
 
