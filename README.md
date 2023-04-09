@@ -69,7 +69,7 @@ Below, I present the created layout in Figma, which has been slightly modified d
 - No loaders
 - No costom 404 page for routing
 
-## How to run client
+## How to run api
 
 To run client localy on pc, file .env.development should have variable:
 
