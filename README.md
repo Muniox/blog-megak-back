@@ -107,6 +107,12 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 Create database with tables:
 
+run SQL script file in blog-megak-back
+
+OR
+
+![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
+
 #### posts
 
 ![image](https://user-images.githubusercontent.com/81775473/230881149-b31b1195-f97f-4501-b887-9e449cd525b3.png)
@@ -115,11 +121,9 @@ Create database with tables:
 
 ![image](https://user-images.githubusercontent.com/81775473/230881235-f0c77402-f2e9-4d53-b94c-0d570b7f6987.png)
 
-OR
 
-run SQL script file
 
-![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
+
 
 
 To run api localy on pc, file .env should have variables:
