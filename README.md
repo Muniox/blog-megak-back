@@ -108,13 +108,8 @@ Change role in database from user to admin
 ## What has not been accomplished on the back-end
 
 - Hashing passwords with salt
-- Serch input that should find posts by name not work
-- User can't change avatar (default avatar for all users)
-- There is no implementation of a user interface to edit their own data.
-- There is no implementation of a admin interface to CRUD user data.
-- Implementation of missing pages using React and Tailwind (About, Contact)
-- No loaders
-- No costom 404 page for routing
+- The category is hardcoded, but it should be designed to be easily expandable. 
+- Sanitazing post title and description should be on back-end for better UX
 
 ## How to run api
 
