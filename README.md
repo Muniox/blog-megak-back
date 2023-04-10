@@ -110,6 +110,7 @@ Change role in database from user to admin
 - Hashing passwords with salt
 - The category is hardcoded, but it should be designed to be easily expandable. 
 - Sanitazing post title and description should be on back-end for better UX
+- Unit tests are incomplete due to a lack of time
 
 ## How to run api
 
