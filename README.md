@@ -111,7 +111,7 @@ Clone repository:
 clone https://github.com/Muniox/blog-megak-back.git
 ```
 
-Create database with tables:
+Create database:
 
 run SQL script file in blog-megak-back
 ![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
