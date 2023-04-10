@@ -8,7 +8,7 @@
 - [General Info](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#general-info)
 - [Demo](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#demo)
 - [Technologies/frameworks/libraries used on back-end side of project](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#technologiesframeworkslibraries-used-on-front-end-side-of-project)
-- [Routes]()
+- [Routes](https://github.com/Muniox/blog-megak-back/tree/develop#routes)
 - [What has been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-back-end)
 - [What has not been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-back-end)
 - [How to run api](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-run-api)
