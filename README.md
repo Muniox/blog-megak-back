@@ -107,10 +107,11 @@ Change role in database from user to admin
 
 ## What has not been accomplished on the back-end
 
-- Hashing passwords with salt
-- The category is hardcoded, but it should be designed to be easily expandable. 
-- Sanitazing post title and description should be on back-end for better UX
-- Unit tests are incomplete due to a lack of time
+- [ ] Hashing passwords with salt
+- [ ] The category is hardcoded, but it should be designed to be easily expandable. 
+- [ ] Sanitazing post title and description should be on back-end for better UX
+- [ ] Unit tests are incomplete due to a lack of time
+- [ ] Lack of return types in methods in Active Records
 
 ## How to run api
 
