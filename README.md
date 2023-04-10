@@ -81,6 +81,10 @@ http://localhost:3000/users/login
 ![image](https://user-images.githubusercontent.com/81775473/230885230-19470167-8d3e-48f6-a384-9ca6d0a103c5.png)
 3. Check token after success log in ![image](https://user-images.githubusercontent.com/81775473/230908806-e2e454cb-9806-4339-949a-0f8302a8a4e8.png)
 
+## How to make user with admin privilage
+
+Change role in database from user to admin
+![image](https://user-images.githubusercontent.com/81775473/230920782-57e84d7c-5b4a-43b7-ac37-58e7b284b7af.png)
 
 
 ## What has been accomplished on the back-end
