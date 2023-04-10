@@ -105,6 +105,12 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 ## How to run api
 
+Clone repository:
+
+```
+clone
+```
+
 Create database with tables:
 
 run SQL script file in blog-megak-back
@@ -119,10 +125,6 @@ OR create tables as below
 #### users
 
 ![image](https://user-images.githubusercontent.com/81775473/230881235-f0c77402-f2e9-4d53-b94c-0d570b7f6987.png)
-
-
-
-
 
 
 To run api localy on pc, file .env should have below variables (change it according to your DB configuration):
