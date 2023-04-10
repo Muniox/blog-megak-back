@@ -165,4 +165,4 @@ if you forgot any above environment variables you will get error about missing v
 
 ## Front-end
 
-Here is a front-end repository: https://github.com/Muniox/front-megak-back
+Here is a front-end repository: https://github.com/Muniox/blog-megak-front
