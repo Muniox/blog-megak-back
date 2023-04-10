@@ -9,6 +9,8 @@
 - [Demo](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#demo)
 - [Technologies/frameworks/libraries used on back-end side of project](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#technologiesframeworkslibraries-used-on-front-end-side-of-project)
 - [Routes](https://github.com/Muniox/blog-megak-back/tree/develop#routes)
+- [How to get token and test api with Insomia or Postman]()
+- [How to make user with admin privilage]()
 - [What has been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-back-end)
 - [What has not been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-back-end)
 - [How to run api](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-run-api)
@@ -64,6 +66,15 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
   
   #### Api
   - POST /api/upload - *image upload (only logged users and admins)*
+
+## How to get token and test api with Insomia or Postman
+
+1. Generate uuid v4 in this site https://www.uuidgenerator.net/version4
+2. Add User to database
+![image](https://user-images.githubusercontent.com/81775473/230885661-0c528004-af3d-4690-b267-45bb2eb2897d.png)
+3. 
+
+![image](https://user-images.githubusercontent.com/81775473/230885230-19470167-8d3e-48f6-a384-9ca6d0a103c5.png)
 
 ## What has been accomplished on the back-end
 
