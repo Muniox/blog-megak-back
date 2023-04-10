@@ -73,8 +73,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 ![image](https://user-images.githubusercontent.com/81775473/230908361-0f067005-b123-457a-a587-4417c56cdbf9.png)
 2. Make POST request to http://localhost:3000/users/login
 ![image](https://user-images.githubusercontent.com/81775473/230885230-19470167-8d3e-48f6-a384-9ca6d0a103c5.png)
-3. Check token after success log in
-![image](https://user-images.githubusercontent.com/81775473/230908806-e2e454cb-9806-4339-949a-0f8302a8a4e8.png)
+3. Check token after success log in ![image](https://user-images.githubusercontent.com/81775473/230908806-e2e454cb-9806-4339-949a-0f8302a8a4e8.png)
 
 
 
