@@ -89,22 +89,25 @@ Change role in database from user to admin
 
 ## What has been accomplished on the back-end
 
-- Authentication (React Context)
+- Authentication
 - Authorization (JWT TOKEN)
-- Routing
-- Responsive web design (mobile first)
-- Fetch posts data and show on Home page
-- Filter posts by category on Home page
-- Sanitize output from backend on front-end using "dompurify" package
-- Integration with simple rich text editor
-- User can create post
-- User can edit his own post
-- User can delete his own post
-- Implementation of pages using React and Tailwind (Home, Login, Register, Single, Write)
+- Asynchronous api
+- Databse connection
+- Active Records pattern
+- CRUD for posts
+- CRUD for users
+- Permision scope for user/admin
+- Verifying environment variables in the .env file
+- File storage with multer
+- Hashing passwords (bcrypt)
+- Error handling
+- Development/Production mode (NODE_ENV)
+- strategy for limiting network traffic (rate limit)
+- CORS
 
 ## What has not been accomplished on the back-end
 
-- Errors only apper in console (modal should be implemented to show errors)
+- Hashing passwords with salt
 - Serch input that should find posts by name not work
 - User can't change avatar (default avatar for all users)
 - There is no implementation of a user interface to edit their own data.
