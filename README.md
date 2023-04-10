@@ -9,7 +9,7 @@
 - [Demo](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#demo)
 - [Technologies/frameworks/libraries used on back-end side of project](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#technologiesframeworkslibraries-used-on-front-end-side-of-project)
 - [Routes](https://github.com/Muniox/blog-megak-back/tree/develop#routes)
-- [How to get token and test api with Insomia or Postman]()
+- [How to get token and test api with Insomia or Postman](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-get-token-and-test-api-with-insomia-or-postman)
 - [How to make user with admin privilage]()
 - [What has been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-back-end)
 - [What has not been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-back-end)
