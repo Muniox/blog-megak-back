@@ -108,7 +108,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 Clone repository:
 
 ```
-clone
+clone https://github.com/Muniox/blog-megak-back.git
 ```
 
 Create database with tables:
@@ -143,10 +143,6 @@ DBUSER='root'
 SECRET='secret_key'
 ```
 
-if you forgot any above environment variables you will get error about missing variable:
-
-![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)
-
 Then run commands in console:
 
 ```
@@ -156,6 +152,10 @@ npm i
 ```
 npm run dev
 ```
+
+if you forgot any above environment variables you will get error about missing variable:
+
+![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)
 
 ## Back-end
 
