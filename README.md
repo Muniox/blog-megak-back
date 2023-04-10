@@ -161,7 +161,7 @@ npm run dev
 
 If you forget any of the above environment variables, you will receive an error indicating that the variable is missing.
 
- <p style="vertical-align: middle">example: ![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)</p>
+ example:<p style="vertical-align: middle">![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)</p>
 
 ## Front-end
 
