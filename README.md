@@ -1,5 +1,8 @@
 # Blog JS Dose - Your Daily Dose of JS (blog-megak-back)
 
+![image](https://user-images.githubusercontent.com/81775473/230876412-fe1d2319-2630-4706-91a0-386f2eb91882.png)
+
+
 ## Table of content
 
 - [General Info](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#general-info)
@@ -33,29 +36,29 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 ## Technologies/frameworks/libraries used on back-end side of project
 
-- TypeScript
-- Express
-- Mysql
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a> TypeScript
+<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express.svg" width="36" height="36" alt="Express" /></a> Express
+<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a> Mysql
 
 ## Routes
 
 #### Posts
-  - GET /posts (get all posts)
-  - GET /posts/:id (get single post with provided id)
-  - POST /posts (add post) (only logged users and admins)
-  - DELETE /posts/:id (delete single post with id) (only logged users and admins)
-  - PUT /posts/:id (edit single post with id) (only logged users and admins)
+  - GET /posts - *get all posts*
+  - GET /posts/:id - *get single post with provided id*
+  - POST /posts - *add post* (only logged users and admins)
+  - DELETE /posts/:id - *delete single post with provided id* (only logged users and admins)
+  - PUT /posts/:id - *edit single post with provided id* (only logged users and admins)
   
 #### Users
-  - GET /users/search/:name? (search for all users with specified name, if name will not provided all users will be returned ) (only admins)
-  - GET /users/:id (get single user with provided id) (only admins)
-  - GET /users (get logged user data) (only logged users and admins)
-  - POST /users/register (register user)
-  - POST /users/login (log in user)
-  - POST /logout (log out user)
-  - DELETE /users/:id (delete user with provided id) (only admins)
-  - PUT /users/:id (update user with provided id) (only admins)
-  - PUT /users (uppdate logged user data) (only logged users and admins)
+  - GET /users/search/:name? - *search for all users with specified name, if name will not provided all users will be returned* (only admins)
+  - GET /users/:id - *get single user with provided id* (only admins)
+  - GET /users - *get logged user data* (only logged users and admins)
+  - POST /users/register - *register user*
+  - POST /users/login - *log in user*
+  - POST /logout - *log out user*
+  - DELETE /users/:id - *delete user with provided id* (only admins)
+  - PUT /users/:id - *update user with provided id* (only admins)
+  - PUT /users - *uppdate logged user data* (only logged users and admins)
   
 
 
