@@ -163,6 +163,6 @@ if you forgot any above environment variables you will get error about missing v
 
 ![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)
 
-## Back-end
+## Front-end
 
-Here is a back-end repository: https://github.com/Muniox/blog-megak-back
+Here is a front-end repository: https://github.com/Muniox/front-megak-back
