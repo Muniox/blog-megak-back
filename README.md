@@ -89,7 +89,7 @@ Change role in database from user to admin
 
 ## What has been accomplished on the back-end
 
-- [x] Authentication
+- [x]Authentication
 - [x] Authorization (JWT token)
 - [x] Asynchronous api
 - [x] Databse connection
