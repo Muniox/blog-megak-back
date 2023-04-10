@@ -125,7 +125,7 @@ OR create tables as below
 
 
 
-To run api localy on pc, file .env should have variables:
+To run api localy on pc, file .env should have below variables (change it according to your DB configuration):
 
 ```
 NODE_ENV='development'
