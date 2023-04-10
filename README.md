@@ -52,18 +52,18 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
   - PUT /posts/:id - *edit single post with provided id (only logged users and admins)*
   
 #### Users
-  - GET /users/search/:name? - *search for all users with specified name, if name will not provided all users will be returned* (only admins)
-  - GET /users/:id - *get single user with provided id* (only admins)
-  - GET /users - *get logged user data* (only logged users and admins)
+  - GET /users/search/:name? - *search for all users with specified name, if name will not provided all users will be returned (only admins)*
+  - GET /users/:id - *get single user with provided id (only admins)*
+  - GET /users - *get logged user data (only logged users and admins)*
   - POST /users/register - *register user*
   - POST /users/login - *log in user*
   - POST /logout - *log out user*
-  - DELETE /users/:id - *delete user with provided id* (only admins)
-  - PUT /users/:id - *update user with provided id* (only admins)
-  - PUT /users - *uppdate logged user data* (only logged users and admins)
+  - DELETE /users/:id - *delete user with provided id (only admins)*
+  - PUT /users/:id - *update user with provided id (only admins)*
+  - PUT /users - *uppdate logged user data (only logged users and admins)*
   
   #### Api
-  - POST /api/upload - *image upload* (only logged users and admins)
+  - POST /api/upload - *image upload (only logged users and admins)*
 
 ## What has been accomplished on the back-end
 
