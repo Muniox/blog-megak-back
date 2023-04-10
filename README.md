@@ -133,7 +133,7 @@ OR create database with tables as below
 ![image](https://user-images.githubusercontent.com/81775473/230881235-f0c77402-f2e9-4d53-b94c-0d570b7f6987.png)
 
 
-To run api localy on pc, file .env should have below variables (change it according to your DB configuration):
+In order to run the API locally on your PC, the .env file should contain the following variables:
 
 ```
 NODE_ENV='development'
@@ -159,8 +159,9 @@ npm i
 npm run dev
 ```
 
-if you forgot any above environment variables you will get error about missing variable:
+If you forget any of the above environment variables, you will receive an error indicating that the variable is missing.
 
+example:
 ![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)
 
 ## Front-end
