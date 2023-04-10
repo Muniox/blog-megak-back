@@ -93,11 +93,42 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 ## How to run api
 
-To run client localy on pc, file .env.development should have variable:
+Create database with tables:
+
+#### posts
+
+![image](https://user-images.githubusercontent.com/81775473/230881149-b31b1195-f97f-4501-b887-9e449cd525b3.png)
+
+#### users
+
+![image](https://user-images.githubusercontent.com/81775473/230881235-f0c77402-f2e9-4d53-b94c-0d570b7f6987.png)
+
+OR
+
+run SQL script file
+
+![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
+
+
+To run api localy on pc, file .env should have variables:
 
 ```
-VITE_PATH='http://localhost:3000/'
+NODE_ENV='development'
+PORT=3000
+ADDRESS='0.0.0.0'
+
+DBHOST='localhost'
+DBPORT=3306
+DBNAME='db_name'
+DBPASSWORD='password'
+DBUSER='root'
+
+SECRET='secret_key'
 ```
+
+if you forgot any above environment variables you will get error about missing variable:
+
+![image](https://user-images.githubusercontent.com/81775473/230882449-28f665bc-4815-4c33-9672-1cc0562c9f16.png)
 
 Then run commands in console:
 
