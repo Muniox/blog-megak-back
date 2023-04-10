@@ -9,9 +9,9 @@
 - [Demo](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#demo)
 - [Technologies/frameworks/libraries used on back-end side of project](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#technologiesframeworkslibraries-used-on-front-end-side-of-project)
 - [Routes]()
-- [What has been accomplished on the front-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-front-end)
-- [What has not been accomplished on the front-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-front-end)
-- [How to run client](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-run-client)
+- [What has been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-been-accomplished-on-the-back-end)
+- [What has not been accomplished on the back-end](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#what-has-not-been-accomplished-on-the-back-end)
+- [How to run api](https://github.com/Muniox/blog-megak-back/blob/develop/README.md#how-to-run-api)
 - [Link to front-end](https://github.com/Muniox/blog-megak-front)
 
 ## General info
