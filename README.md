@@ -89,21 +89,21 @@ Change role in database from user to admin
 
 ## What has been accomplished on the back-end
 
-- Authentication
-- Authorization (JWT token)
-- Asynchronous api
-- Databse connection
-- Active Records pattern
-- CRUD for posts
-- CRUD for users
-- Permision scope for user/admin
-- Verifying environment variables in the .env file
-- File storage with multer
-- Hashing passwords (bcrypt)
-- Error handling
-- Development/Production mode (NODE_ENV)
-- strategy for limiting network traffic (express-rate-limit)
-- CORS
+- [x] Authentication
+- [x] Authorization (JWT token)
+- [x] Asynchronous api
+- [x] Databse connection
+- [x] Active Records pattern
+- [x] CRUD for posts
+- [x] CRUD for users
+- [x] Permision scope for user/admin
+- [x] Verifying environment variables in the .env file
+- [x] File storage with multer
+- [x] Hashing passwords (bcrypt)
+- [x] Error handling
+- [x] Development/Production mode (NODE_ENV)
+- [x] strategy for limiting network traffic (express-rate-limit)
+- [x] CORS
 
 ## What has not been accomplished on the back-end
 
