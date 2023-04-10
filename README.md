@@ -90,7 +90,7 @@ Change role in database from user to admin
 ## What has been accomplished on the back-end
 
 - Authentication
-- Authorization (JWT TOKEN)
+- Authorization (JWT token)
 - Asynchronous api
 - Databse connection
 - Active Records pattern
@@ -102,7 +102,7 @@ Change role in database from user to admin
 - Hashing passwords (bcrypt)
 - Error handling
 - Development/Production mode (NODE_ENV)
-- strategy for limiting network traffic (rate limit)
+- strategy for limiting network traffic (express-rate-limit)
 - CORS
 
 ## What has not been accomplished on the back-end
