@@ -72,8 +72,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 1. Generate uuid v4 in this site https://www.uuidgenerator.net/version4
 2. Add User to database
 ![image](https://user-images.githubusercontent.com/81775473/230885661-0c528004-af3d-4690-b267-45bb2eb2897d.png)
-3. 
-
+3. Make POST request with JSON
 ![image](https://user-images.githubusercontent.com/81775473/230885230-19470167-8d3e-48f6-a384-9ca6d0a103c5.png)
 
 ## What has been accomplished on the back-end
