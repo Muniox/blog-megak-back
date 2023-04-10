@@ -65,7 +65,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 
 
-## What has been accomplished on the front-end
+## What has been accomplished on the back-end
 
 - Authentication (React Context)
 - Authorization (JWT TOKEN)
@@ -80,7 +80,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 - User can delete his own post
 - Implementation of pages using React and Tailwind (Home, Login, Register, Single, Write)
 
-## What has not been accomplished on the front-end
+## What has not been accomplished on the back-end
 
 - Errors only apper in console (modal should be implemented to show errors)
 - Serch input that should find posts by name not work
