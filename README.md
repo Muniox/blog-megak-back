@@ -63,7 +63,7 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
   - PUT /users - *uppdate logged user data* (only logged users and admins)
   
   #### Api
-  - POST /api/upload (image upload) (only logged users and admins)
+  - POST /api/upload - *image upload* (only logged users and admins)
 
 ## What has been accomplished on the back-end
 
