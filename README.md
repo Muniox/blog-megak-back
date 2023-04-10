@@ -108,10 +108,9 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 Create database with tables:
 
 run SQL script file in blog-megak-back
+![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
 
 OR
-
-![image](https://user-images.githubusercontent.com/81775473/230881330-1785fa4a-8ef1-4862-83ff-2700005a5929.png)
 
 #### posts
 
