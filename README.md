@@ -135,8 +135,8 @@ OR create database with tables as below
 ![image](https://user-images.githubusercontent.com/81775473/230881235-f0c77402-f2e9-4d53-b94c-0d570b7f6987.png)
 
 
-In order to run the API locally on your PC, the .env file should contain the following variables:
-Fill in according to your own database configuration.
+In order to run the API locally on your PC, the .env file should contain the following variables (Fill in according to your own database configuration):
+
 ```
 NODE_ENV='development'
 PORT=3000
