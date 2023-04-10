@@ -69,10 +69,11 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 
 ## How to get token and test api with Insomia or Postman
 
-1. Generate uuid v4 in this site https://www.uuidgenerator.net/version4
+1. Make POST request to http://localhost:3000/users/register
+![image](https://user-images.githubusercontent.com/81775473/230908361-0f067005-b123-457a-a587-4417c56cdbf9.png)
 2. Add User to database
 ![image](https://user-images.githubusercontent.com/81775473/230885661-0c528004-af3d-4690-b267-45bb2eb2897d.png)
-3. Make POST request with JSON and log in user
+3. Make POST request to http://localhost:3000/users/login
 ![image](https://user-images.githubusercontent.com/81775473/230885230-19470167-8d3e-48f6-a384-9ca6d0a103c5.png)
 4. Check token after success log in
 ![image](https://user-images.githubusercontent.com/81775473/230908007-b4a20aa5-2961-4876-88c9-5808b6666e1d.png)
