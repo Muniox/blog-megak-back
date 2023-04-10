@@ -112,6 +112,7 @@ Change role in database from user to admin
 - [ ] Sanitazing post title and description should be on back-end for better UX
 - [ ] Unit tests are incomplete due to a lack of time
 - [ ] Lack of return types in methods in Active Records
+- [ ] Search method and search route for posts
 
 ## How to run api
 
