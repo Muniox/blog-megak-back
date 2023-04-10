@@ -47,9 +47,9 @@ Here is a working live demo: https://blog.truemuniox.usermd.net/
 #### Posts
   - GET /posts - *get all posts*
   - GET /posts/:id - *get single post with provided id*
-  - POST /posts - *add post* (only logged users and admins)
-  - DELETE /posts/:id - *delete single post with provided id* (only logged users and admins)
-  - PUT /posts/:id - *edit single post with provided id* (only logged users and admins)
+  - POST /posts - *add post (only logged users and admins)*
+  - DELETE /posts/:id - *delete single post with provided id (only logged users and admins)*
+  - PUT /posts/:id - *edit single post with provided id (only logged users and admins)*
   
 #### Users
   - GET /users/search/:name? - *search for all users with specified name, if name will not provided all users will be returned* (only admins)
