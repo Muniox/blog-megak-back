@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "target": "ES6",
+        "downlevelIteration": true,
+        "module" :"CommonJS",
+        "lib": ["ES6"],
+        "outDir": "./public_nodejs",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./global/globals.d.ts", "./node_modules/@types"
+        ],
+        "skipLibCheck": true
+    }
+}
