@@ -80,7 +80,8 @@ export class PostsRecord implements PostsEntity {
         userId: this.userId,
         category: this.category,
       },
-    );
+    ) as PostsRecordResults;
+    return this.id;
   }
 
   static async getOne(id: string): Promise<PostsRecord | null> {

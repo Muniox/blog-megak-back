@@ -32,10 +32,11 @@ export const postsRouter = Router()
     const post = new PostsRecord({
       title, desc, category, date, img, userId,
     });
-    await post.insert();
+    const postId = await post.insert();
     return res
       .status(200)
       .json({
+        postId,
         message: 'post has been added',
       });
   })
